@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programmering - Wikipedia</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="favicon" href="assets/wiki-favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="headercontainer">
+      <div class="hamburger">
+        <nav id="hamburgernav" class="navigation">
+          <input id="toggle1" type="checkbox" />
+          <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+          </label>
+
+          <nav class="menu1">
+            
+            <a
+              class="link1"
+              href="https://sv.wikipedia.org/wiki/Portal:Huvudsida"
+              >&#9679; Huvudsida</a
+            >
+            <a
+              class="link1"
+              href="https://sv.wikipedia.org/wiki/Wikipedia:Introduktion"
+              >&#9679; Introduktion</a
+            >
+            <a
+              class="link1"
+              href="https://sv.wikipedia.org/wiki/Wikipedia:Deltagarportalen"
+              >&#9679; Deltagarportalen</a
+            >
+            <a
+              class="link1"
+              href="https://sv.wikipedia.org/wiki/Wikipedia:Bybrunnen"
+              >&#9679; Bybrunnen</a
+            >
+            <a
+              class="link1"
+              href="https://sv.wikipedia.org/wiki/Special:Senaste_%C3%A4ndringar"
+              >&#9679; Senaste ändringarna</a
+            >
+          </nav>
+        </nav>
+      </div>
+
+      <div>
+        <a href="https://sv.wikipedia.org/wiki/Portal:Huvudsida">
+          <img
+            id="wikilogo"
+            src="assets/pngimg.com-wikipedia_PNG40.png"
+            alt="Wikipedia logotyp"
+          />
+        </a>
+      </div>
+
+      <div class="searchcontainer">
+        <div class="containerform">
+          <form id="form">
+            <input
+              type="search"
+              id="searchfield"
+              name="q"
+              style="border-color: #0d6efd"
+              placeholder="Sök på Wikipedia.."
+            />
+            <button id="searchbutton">Sök</button>
+          </form>
+        </div>
+      </div>
+
+      <!--Bootstrap login-->
+      <form class="loginform">
+        <div class="col-sm-10">
+          <label for="inputEmail3">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail3"
+            placeholder="Email.."
+          />
+        </div>
+
+        <div class="col-sm-10">
+          <label for="inputPassword3">Lösenord</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword3"
+            placeholder="Lösenord.."
+          />
+        </div>
+        <button id="loginbtn" type="submit" class="btn btn-primary">
+          Logga in
+        </button>
+      </form>
+      <!--Bootstrap login-->
+    </header>
+
+    <div class="sidenav">
+      <p class="sidenavhead">Innehåll</p>
+      <hr class="sidenavhr" />
+      <a href="#top">Inledning</a>
+      <a href="#diff">Olika slags programmering</a>
+      <div class="dropdown">
+        <div class="dropbtn" style="color: #0d6efd">
+          <a>Teorier om programmering</a>
+          <i class="fa fa-caret-down"></i>
+        </div>
+        <div class="dropdown-content">
+          <a href="#structured">Strukturerad programmering</a>
+          <a href="#functional">Funktionell programmering</a>
+          <a href="#object">Objektorienterad programmering</a>
+          <a href="#logic">Logikprogrammering</a>
+        </div>
+      </div>
+
+      <a href="#hist">Historia</a>
+      <a href="#ex">Exempel</a>
+      <a href="#seealso">Se även</a>
+      <a href="#ref">Referenser</a>
+      <a href="#note">Noter</a>
+      <a href="#ext">Externa länkar</a>
+    </div>
+
+    <main>
+      <h1>Programmering</h1>
+      <hr />
+
+      <!--Bootstrap buttons-->
+      <nav class="navbuttons">
+        <div>
+          <a
+            class="btn btn-primary"
+            href="https://sv.wikipedia.org/wiki/Programmering"
+            role="button"
+            >Artikel</a
+          >
+          <a
+            class="btn btn-primary"
+            href="https://sv.wikipedia.org/wiki/Diskussion:Programmering"
+            role="button"
+            >Diskussion</a
+          >
+        </div>
+
+        <div class="rightnavbuttoncontainer">
+          <a class="btn btn-primary" role="button">Läs</a>
+          <a class="btn btn-primary" role="button">Redigera</a>
+          <a class="btn btn-primary" role="button">Redigera wikitext</a>
+          <a class="btn btn-primary" role="button">Visa historik</a>
+          <a class="btn btn-primary" role="button">Verktyg</a>
+        </div>
+      </nav>
+      <!--Bootstrap buttons-->
+
+      <hr />
+
+      <div class="htmlimgcontainer">
+        <a
+          href="https://miro.medium.com/v2/resize:fit:1400/1*R0qyXA3W09ffe2IMdoH8Ig.png"
+        >
+          <img
+            id="htmlimg"
+            src="assets/1_R0qyXA3W09ffe2IMdoH8Ig.png"
+            alt="En skärmdump av simpel HTML-kod"
+          />
+        </a>
+        <p id="htmlimgdescription">
+          <abbr title="Hypertext Markup Language">HTML</abbr>-kod.
+        </p>
+      </div>
+
+      <div class="prog">
+        <p>
+          <strong>Programmering</strong> handlar om att instruera en maskin
+          eller del av en maskin, till exempel en
+          <span class="textlink">mikrodator</span>,
+          <span class="textlink">dator</span>,
+          <span class="textlink">robot</span> eller
+          <span class="textlink"
+            ><abbr title="Numerical control">NC-maskin</abbr></span
+          >
+          att utföra ett visst arbete. Personen som utför detta hantverk brukar
+          ofta tituleras <span class="textlink">programmerare</span>.
+          Programmering är en del av det vidare begreppet
+          <span class="textlink italic">programvaruutveckling</span> eller
+          <span class="italic">mjukvaruutveckling</span> som även innefattar
+          aktiviteter som sammanställning av krav, mjukvarudesign och testning.
+          När man programmerar skriver man ett
+          <span class="textlink">program</span> och man använder ett
+          <span class="textlink">programspråk</span>. Olika delar av ett program
+          kan vara skrivet i olika programspråk. Maskinen förstår normalt inte
+          programspråket direkt. Detta måste översättas till den
+          <span class="textlink">maskinkod</span> som maskinen är konstruerad
+          att direkt förstå. Programmering direkt i maskinkod förekommer
+          praktiskt taget inte alls eftersom det är för arbetskrävande. Olika
+          typer av maskiner har helt olika uppsättningar instruktioner i sin
+          maskinkod. Begrepp förknippade med programmering är bland annat
+          <span class="textlink">slingor</span> och
+          <span class="textlink">uppställningar</span>.
+        </p>
+      </div>
+
+        <h2>Olika slags programmering</h2>
+        <section class="diff">
+        <hr />
+        <p>
+          Programmering kan ske på olika abstraktionsnivåer. Närmast
+          <span class="textlink">hårdvaran</span>, förutom maskinkod, ligger
+          <span class="italic">assemblerprogrammering</span> där man använder
+          ett <span class="textlink">assemblerspråk</span>. Ett sådant språk har
+          i det närmaste en direktöversättning till maskinkod, det vill säga de
+          instruktioner man skriver motsvaras direkt av instruktioner i
+          maskinkod, men använder en för människan mer läsbar form än
+          maskinskodens ettor och nollor. Till exempel kan "SR 1,2" betyda
+          "Subtrahera innehållet i register nummer 1 med innehållet i register
+          nr 2". Assemblerspråket, som oftast också tillåter
+          <span class="textlink">makro</span>-instruktioner, måste översättas
+          till maskinkod med hjälp av ett speciellt program: en
+          <span class="textlink">assemblator</span> eller något liknande.
+        </p>
+        <p>
+          På nästa nivå kommer allmänna
+          <span class="textlink">programspråk</span> (engelska:
+          <span class="italic">general purpose computer languages</span>) som
+          till exempel <span class="textlink">C</span>,
+          <span class="textlink">Pascal</span> och
+          <span class="textlink">Java</span>. I ett sådant språk motsvarar en
+          <span class="italic">sats</span> eller instruktion normalt många
+          instruktioner i maskinspråket. Till exempel kan satsen "saldo =
+          tidigaresaldo - uttag;" motsvara maskininstruktioner för att hämta
+          data från minnet till register, subtrahera innehållet i register och
+          skriva tillbaka resultatet till minnet. Ett sådant program översätts,
+          <span class="italic">kompileras</span>, till maskinkod av en
+          <span class="textlink">kompilator</span> eller
+          <span class="italic">interpreteras</span> av en
+          <span class="textlink">tolk.</span> Ofta skiljer man också här mellan
+          <span class="italic">maskinnära språk</span> som C och
+          <span class="italic">högnivåspråk</span> där en större del av
+          funktionaliteten beskrivs abstrakt. Högnivåspråk kan också användas
+          som term för språk med högre abstraktionsnivå än assembler.
+        </p>
+        <p>
+          Ytterligera en abstraktionsnivå uppnås när man inte längre direkt
+          beskriver <span class="italic">hur</span> något ska utföras utan
+          snarare <span class="italic">vad</span> som ska utföras. Detta
+          förutsätter att man begränsat problemområdet på något sätt så att
+          tolkaren eller kompilatorn kan använda färdiga dellösningar som sätts
+          ihop till en totallösning för det aktuella problemet. Exempel på
+          sådana språk är <span class="textlink">RPG</span> för
+          rapportgenerering. Också allmänna programspråk kan vara konstruerade
+          för en viss uppgift, såsom
+          <span class="textlink">PostScript</span> för sidbeskrivning eller
+          <span class="textlink">R</span> för statistiska problem.
+        </p>
+        <p>
+          Andra indelningar är de i språk som skall
+          <span class="textlink">tolkas</span> eller
+          <span class="textlink">kompileras</span> och enligt
+          <span class="textlink">programmeringsparadigm</span> (<span
+            class="textlink"
+            >funktionell</span
+          >, <span class="textlink">procedurell</span>,
+          <span class="textlink">objektorienterad programmering</span> eller
+          liknande).
+        </p>
+        <p>
+          Programmering kan också delas in efter
+          <span class="italic">vad</span> programmet utför. Närmast hårdvaran
+          kommer här styrning av hårdvarukomponenter genom
+          <span class="textlink">mikroprogrammering</span>, till exempel
+          <span class="textlink"
+            ><abbr title="Basic Input/Output System">BIOS</abbr></span
+          >
+          i en <span class="textlink">persondator</span> eller
+          <span class="textlink">drivrutiner</span> för olika utrustningar.
+          Nästa nivå är <span class="textlink">operativsystemet</span> som
+          fördelar och administrerar datorns resurser och gör datorn allmänt
+          tillgänglig för människan genom ett
+          <span class="textlink">användargränssnitt</span>. Slutligen kommer
+          nivån med alla olika användarprogram som
+          <span class="textlink">ordbehandlare</span>,
+          <span class="textlink">webbläsare</span> och
+          <span class="textlink">datorspel</span>. De första typerna av
+          programmering görs av hårdvaruleverantörer, men operativsystem
+          programmeras numera också av fristående programvaruleverantörer, som
+          <span class="textlink">Microsoft</span>,
+          <span class="textlink">Apple Computer</span>,
+          <span class="textlink">Sun Microsystems</span>, eller i distribuerade
+          frivilligprojekt med <span class="textlink">öppen källkod</span>.
+          Ibland använder man benämningen
+          <span class="textlink">programvara</span> (även ”mjukvara”) för en
+          samling program och deras tillhörande data.
+        </p>
+      </section>
+
+      <section class="theory">
+        <h2>Teorier om programmering</h2>
+        <hr />
+        <p>
+          Sedan programmeringens barndom på 1950- och 60-talet har många olika
+          idéer och läror om programmering och hur man bäst organiserar och
+          strukturerar framför allt stora program framförts. Parallellt med
+          detta har hela tiden nya programspråk konstruerats för att ge stöd för
+          dessa olika <span class="textlink">programmeringsparadigm</span>. De
+          problem med programmering som man försökt lösa har bland annat varit:
+        </p>
+        <ul>
+          <li>Stora program är svåra att förstå och överblicka.</li>
+          <li>
+            Program som ändrats många gånger blir svårare och svårare att
+            överblicka och förstå.
+          </li>
+          <li>
+            Ändringar i ett program får ibland följder som man inte förutsett
+            eller önskat.
+          </li>
+          <li>
+            För att ändra en funktion i ett existerande program måste man ibland
+            göra ändringar på många ställen i koden, trots att förändringen man
+            vill göra kan tyckas trivial.
+          </li>
+          <li>
+            Programmering kan ta lång tid. Tillgängliga resurser räcker inte
+            till.
+          </li>
+          <li>
+            Program gjorda av en person kan vara svåra att förstå för en annan
+            person, eller till och med samma person, en viss tid efteråt.
+          </li>
+          <li>
+            "Hur många fel man än rättar i ett program, så finns det alltid
+            ytterligare fel kvar som man inte upptäckt."
+          </li>
+        </ul>
+
+        <h2 id="structured">Strukturerad programmering</h2>
+
+        <p style="font-size: 18px">
+          <span class="italic">Huvudartikel:</span
+          ><span class="textlink italic"> Strukturerad programmering</span>
+        </p>
+        <p>
+          <span class="textlink">1968</span> skrev
+          <span class="textlink">Edsger Dijkstra</span> en klassisk artikel
+          <span class="italic">Go to statement considered harmful</span> som
+          blev början till det som kom att kallas
+          <span class="textlink">strukturerad programmering</span>. Dijkstra
+          hävdade att ett oreglerat användande av hopp-satser i ett program
+          ledde till oöverblickbara och ohanterliga program. Resultatet blev
+          lätt vad man brukade kalla
+          <span class="textlink">spagettiprogrammering</span> med hopp fram och
+          tillbaka och fel som var svåra att spåra. Lösningen var att endast
+          använda <span class="italic">strukturerade</span> satser som
+          if-then-else och do-while istället för explicita hoppsatser. Man
+          visade också att det alltid går att omforma ett ostrukturerat program
+          till ett strukturerat program med samma funktion. Dessa idéer är
+          numera allmänt accepterade och de flesta moderna programspråk saknar
+          till och med explicita hoppsatser. Man kan nog säga de problem som
+          strukturerad programmering försökte lösa mycket hängde ihop med de
+          tidiga programspråken som <span class="textlink">Fortran</span> och
+          <span class="textlink"
+            ><abbr title="Common Business Oriented Language">CBOL</abbr></span
+          >
+          och de möjligheter till spagettikodning som fanns i dessa.
+        </p>
+
+        <h2 id="functional">Funktionell programmering</h2>
+
+        <p>
+          Många idéer uppstod också om på vilket sätt stora program skulle delas
+          upp i mindre bitar, <span class="italic">modulariseras</span>, och hur
+          dessa delar skulle tillåtas påverka varandra. En ståndpunkt
+          representeras av
+          <span class="textlink">funktionell programmering</span> där bitarna,
+          <span class="italic">funktionerna</span>, inte kan påverka andra bitar
+          över huvud taget. Många språk räknas dock som funktionella trots att
+          de inte har denna egenskap. Funktionell programmering bygger på en
+          matematisk grund, <span class="textlink">lambdakalkyl</span>, vilket
+          kan leda till ökade möjligheter till automatisk analys av funktionella
+          program, till exempel i syfte att bevisa att programmet har en viss
+          egenskap eller att en viss optimering är giltig.
+        </p>
+
+        <h2 id="object">Objektorienterad programmering</h2>
+
+        <p style="font-size: 18px">
+          <span class="italic">Huvudartikel:</span
+          ><span class="textlink italic"> Objektorienterad programmering</span>
+        </p>
+        <p>
+          Andra tidiga idéer för modularisering av program handlade om att dela
+          in koden efter de <span class="italic">begrepp</span> eller data som
+          programmet hanterade. För vissa typer av problem är detta en mycket
+          naturlig och intuitiv indelningsgrund. Ska man till exempel göra ett
+          program för en bank är det naturligt att det finns en modul för konto
+          och en för kontoinnehavare och så vidare. När dessa idéer kopplades
+          till idéer om att information i en modul skulle
+          <span class="textlink italic">inkapslas</span> eller döljas i så stor
+          utsträckning som möjligt för de andra modulerna så fick man effekten
+          att förändringar av programmet ofta kunde begränsas till enstaka
+          moduler och mindre ofta fick förändringarna oförutsedda effekter i
+          andra delar av programmet. På
+          <span class="textlink">1980-talet</span> tillkom idén att begreppen
+          bakom modulerna inte var oberoende av varandra utan kunde ses som
+          förfiningar eller specialiseringar av ett grundbegrepp i olika nivåer
+          så att man fick en hierarki av relaterade objekt där egenskaper kunde
+          <span class="textlink italic">ärvas</span> från överordnat till
+          underordnat objekt. Exempelvis kunde ett bankkonto förfinas i
+          sparkonto och kreditkonto med något olika egenskaper. Förstadier till
+          sådan <span class="textlink">objektorienterad programmering</span> kom
+          redan i slutet på <span class="textlink">1960-talet</span> med språket
+          <span class="textlink">Simula 67</span> men det var först med
+          programspråket <span class="textlink">Smalltalk</span> från
+          <span class="textlink">Xerox</span> omkring
+          <span class="textlink">1980</span> och
+          <span class="textlink">C++</span> i slutet av
+          <span class="textlink">1980-talet</span> som idéerna fick större
+          spridning. Idéerna bakom objektorienterad programmering har, i likhet
+          med den tidigare strukturerade programmeringen, fått en mycket stor
+          acceptans och stöd för detta paradigm finns i en eller annan form i de
+          flesta av de nyare programspråken. Fördelar som brukar framhållas är
+          att funktioner som är gemensamma för många olika slags objekt eller
+          begrepp bara behöver kodas en gång och kan återanvändas av alla de
+          objekt som behöver dem. Endast de funktioner som verkligen är olika
+          mellan olika underordnade objekt behöver programmeras om. För att
+          skilja mellan objektorienterad programmering och det "gamla" sättet
+          att programmera myntades begreppet
+          <span class="textlink">procedurell programmering</span> för det
+          traditionella sättet. En omdebatterad fråga har varit om
+          <span class="textlink">multipelt arv</span> är nödvändigt eller inte.
+          Med detta menas att ett begrepp ibland kan ses som en specialisering
+          av flera olika överordnade begrepp. Till exempel kan objektet Lejon
+          betraktas både som ett däggdjur och som ett rovdjur. Multipelt arv
+          innebär vissa komplikationer som av vissa anses vara allvarligare än
+          de fördelar som möjligheten ger. Starkt knutet till objektorientering
+          är också de idéer om <span class="textlink">designmönster</span> som
+          utvecklades under senare delen av
+          <span class="textlink">1990-talet</span>, med bland annat den
+          epokgörande boken
+          <span class="textlink italic"
+            >Design patterns, Elements of Reusable Object-Oriented
+            Software</span
+          >
+          av <span class="textlink">Erich Gamma</span>,
+          <span class="textlink">Richard Helm</span>,
+          <span class="textlink">Ralph Johnson</span> och
+          <span class="textlink">John Vlissides</span> från
+          <span class="textlink">1995</span>.
+        </p>
+
+        <h2 id="logic">Logikprogrammering</h2>
+        <p>
+          Ett annat spår inom programmering är
+          <span class="textlink">logikprogrammering</span>. Här ligger
+          tyngdpunkten på att samla fakta och regler. Genom
+          <span class="textlink">deduktion</span> eller
+          <span class="textlink">induktion</span> kan sedan olika resultat
+          automatiskt härledas. Logikprogrammering är nära besläktad med
+          Artificiell intelligens (<span class="textlink">AI</span>). Det mest
+          kända programspråket för logikprogrammering är Prolog.
+        </p>
+      </section>
+
+      <h2 id="hist">Historia</h2>
+      <hr />
+      <section class="history">
+        <div style="margin-right: 10px">
+          <p>
+            Äran som den första programmeraren brukar tilldelas
+            <span class="textlink">Ada Lovelace</span>, dotter till
+            <span class="textlink">Lord Byron</span>. Hon hjälpte
+            <span class="textlink">Charles Babbage</span> i dennes arbete med
+            <span class="textlink">den analytiska maskinen</span>.
+            Programspråket <span class="textlink">Ada</span> är uppkallat efter
+            henne.
+          </p>
+          <p>
+            <span class="textlink">Den analytiska maskinen</span> var världens
+            första ritning på en programmerbar dator, från år 1837. Den blev
+            aldrig byggd. Konstruktören var
+            <span class="textlink">Charles Babbage</span>. Hans vän Ada Lovelace
+            var den person som kom med idén om den analytiska maskinen. I
+            samband med presentationen av maskinen skrev hon vad som senare
+            angetts som världens första
+            <span class="textlink">datorprogram</span>.
+          </p>
+        </div>
+        <figure>
+          <img
+            id="imgada"
+            src="assets/100px-Ada_lovelace.jpg"
+            alt="Ett målat porträtt av Ada Lovelace"
+          />
+          <figcaption style="font-size: 18px; font-style: italic">
+            Ada Lovelace
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            id="imgmachine"
+            src="assets/250px-Analytical_Engine_(2290032530).jpg"
+            alt="Den analytiska maskinen, världens första ritning på en programmerbar dator"
+          />
+          <figcaption style="font-size: 18px; font-style: italic">
+            Modell av den analytiska maskinen
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2 id="ex">Exempel</h2>
+        <hr />
+        <p>
+          Följande är ett exempel på hur en hemsida beskriven med
+          <span class="textlink">HTML</span> använder
+          <span class="textlink">JavaScript</span> för att skriva ut "Klockan är
+          nu hh:mm:ss":
+        </p>
+
+        <pre class="codeexample">
+          
+             &lt;html>
+                &lt;head>
+                &lt;title>Exempel - JavaScript&lt;/title>
+                &lt;/head>
+                &lt;body>
+                &lt;script type="text/javascript">
+                var tid = new Date(); // Ger aktuell tidsinformation
+                var timme = tid.getHours(); // Ger timmen från 0 till 23
+                var minut = tid.getMinutes(); // Ger minuten från 0 till 59
+                var sekund = tid.getSeconds(); // Ger sekunden 0 till 59
+                if (timme < 10) {
+                    timme = "0" + timme; // Gör h till hh
+                }
+                if (minut < 10) {
+                    minut = "0" + minut; // Gör m till mm
+                }
+                if (sekund < 10) {
+                    sekund = "0" + sekund; // Gör s till ss
+                }
+                   document.write("Klockan är nu " + timme + ":" + minut + ":" + sekund); // skriv ut tiden
+                  &lt;/script>
+                &lt;/body>
+             &lt;/html>
+            </pre
+        >
+
+        <p>
+          Ett konsolapplikationsexempel i C++ för Windows. Skriver som ovan ut
+          "Klockan är nu hh:mm:ss" och inväntar en knapptryckning före avslut.
+        </p>
+
+        <pre class="codeexample">
+         #include &lt;iostream>
+         #include &lt;windows.h>
+         using namespace std;
+             
+         int main()
+         {
+            SYSTEMTIME tiden;
+            GetLocalTime(&tiden);
+            int timme = tiden.wHour;
+            int minut = tiden.wMinute;
+            int sekund = tiden.wSecond;
+            cout << "Klockan är nu "
+                 << setfill('0') << setw(2)
+                 << timme << ":" << minut
+                 << ":" << sekund << endl;
+            cin.get(); //Väntar på inmatning från användaren så att programmet inte stängs ner direkt när det körs
+            return 0;
+         }
+        </pre>
+
+        <p>
+          Liknande program i C, (ger utskrift i format "Dagnamn Månad Dagtal
+          Timme:Minut:Sekund Årtal") och inväntar nyradstecken eller annan
+          signal (Ctrl-C etc).
+        </p>
+
+        <pre class="codeexample">
+        #include &lt;stdio.h>
+        #include &lt;time.h>
+                
+        int main(void)
+        {
+            time_t t;
+            time(&t);
+            puts(ctime(&t));
+            getchar();
+                
+            return 0;
+        }
+        </pre>
+
+        <p>Här så har man skrivit "Hello World" koden i Java.</p>
+
+        <pre class="codeexample">
+            public class Hello {
+                public static void main(String[] args) {
+                  System.out.println("Hello World!");
+                }
+            } 
+        </pre>
+
+        <p>Så här kan det se ut när ett proffs kodar Pac-Man.</p>
+
+        <iframe
+          class="video"
+          width="1080"
+          height="540"
+          src="https://www.youtube.com/embed/GXlckaGr0Eo"
+          title="ASMR Programming - Coding Pacman - No Talking"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section>
+        <h2 id="seealso">Se även</h2>
+        <hr />
+        <ul>
+          <li>
+            <a href="https://sv.wikipedia.org/wiki/Programspr%C3%A5k"
+              >Programspråk</a
+            >
+          </li>
+          <li>
+            <a href="https://sv.wikipedia.org/wiki/Programvarutestning"
+              >Programvarutestning</a
+            >
+          </li>
+          <li>
+            <a href="https://sv.wikipedia.org/wiki/Programvaruutveckling"
+              >Programvaruutveckling</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="ref">Referenser</h2>
+        <hr />
+        <h5 id="note">Noter</h5>
+        <p>
+          1. <a href="#hist">^</a
+          ><a
+            href="https://web.archive.org/web/20090327073325/https://www.newscientist.com/blogs/shortsharpscience/2009/03/ada-lovelace-day.html"
+            >”Short Sharp Science: Celebrating Ada Lovelace: the 'world's first
+            programmer'” <i class="fa fa-external-link"></i></a
+          >. www.newscientist.com. Arkiverad från
+          <a
+            href="https://www.newscientist.com/blogs/shortsharpscience/2009/03/ada-lovelace-day.html"
+            >originalet <i class="fa fa-external-link"></i
+          ></a>
+          den 27 mars 2009. Läst 22 december 2015.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="ext">Externa länkar</h2>
+        <hr />
+        <ul>
+          <li>
+            <a
+              href="http://portal.acm.org/citation.cfm?id=362929.362947&coll=portal&dl=ACM&CFID=85169494&CFTOKEN=50537306"
+              >Go to statement considered harmful
+              <i class="fa fa-external-link"></i></a
+            >, Dijkstras berömda artikel
+          </li>
+          <li>
+            <a href="http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html"
+              >Why Functional Programming Matters
+              <i class="fa fa-external-link"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://www.objectfaq.com/oofaq2/"
+              >Object-orienterad programmerings FAQ
+              <i class="fa fa-external-link"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://web.archive.org/web/20081014102219/http://joel.reddit.com./"
+              >Länksamling om programmering och systemutveckling - Joel.reddit
+              <i class="fa fa-external-link"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      <p>Sidan redigerades senast den 20 november 2023 kl. 18.13.</p>
+      <p>
+        Wikipedias text är tillgänglig under licensen
+        <a href="#">Creative Commons Erkännande-dela-lika 4.0 Unported</a>. För
+        bilder, se respektive bildsida (klicka på bilden). Se vidare
+        <a href="#">Wikipedia:Upphovsrätt</a> och
+        <a href="#">användarvillkor</a>.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,349 @@
+body {
+  margin: 0px 600px;
+  line-height: 25px;
+  background-color: rgb(225, 239, 252);
+  font-size: 17px;
+}
+
+main {
+  margin-left: 300px;
+  margin-top: 50px;
+  background-color: rgb(225, 239, 252);
+}
+
+section {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.prog {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.btn {
+  color: white;
+  background-color: #0d6efd;
+  height: 30px;
+  padding: 5px;
+  line-height: 16px;
+}
+
+.textlink {
+  cursor: pointer;
+  color: blue;
+}
+
+.textlink:hover {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.headercontainer {
+  display: flex;
+  height: 80px;
+}
+
+.searchcontainer {
+  margin-right: 925px;
+}
+
+.navbuttons {
+  display: flex;
+}
+
+.rightnavbuttoncontainer {
+  margin-left: auto;
+}
+
+
+.htmlimgcontainer {
+  padding: 2px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#htmlimg {
+  height: 400px;
+  width: 400px;
+  float: right;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+#htmlimgdescription {
+  margin: 0;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+#wikilogo{
+  margin-top: 10px;
+  width: 250px;
+  height: 75px;
+  padding-right: 20px;
+}
+
+#searchfield {
+  height: 37px;
+  width: 400px;
+  border-radius: 3px;
+  margin-top: 20px;
+  background-color: aliceblue;
+}
+
+#searchbutton {
+  background-color: #0d6efd;
+  border: none;
+  color: white;
+  height: 37px;
+  width: 55px;
+  border-radius: 5px;
+}
+
+.form-control {
+  border-color: #0d6efd;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  top: 9.65%;
+}
+
+.sidenavhr {
+  margin: 0px;
+}
+
+.sidenavhead {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#imgada {
+  border: 1px solid grey;
+  height: 300px;
+  width: 200px;
+  margin-right: 25px;
+}
+
+#imgmachine {
+  border: 1px solid grey;
+  height: 300px;
+  width: 200px;
+}
+
+.history {
+  display: flex;
+}
+
+.dropdown-content {
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: #0d6efd;
+  padding: 10px;
+  text-decoration: underline;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.codeexample {
+  border: 1px solid rgb(219, 216, 216);
+  background-color: rgb(241, 238, 238);
+}
+
+.hamburger {
+  width: 55px;
+  padding-top: 12px;
+}
+
+.hamburger1 {
+  height: 45px;
+  margin: 10px;
+  display: grid;
+  justify-items: left;
+}
+
+.hamburger1:hover {
+  cursor: pointer;
+}
+
+#hamburgernav {
+  width: 180px;
+}
+
+.hamburger1 div {
+  background-color: black;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  margin-top: 7px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0); 
+  transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: 400px;
+  position:relative;
+  z-index: 120;
+}
+
+.menu1 {
+  font-size: 19px;
+  font-weight: bold;
+  width: 130%;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;  
+  box-shadow: 2px 2px 10px rgb(17, 20, 22);
+  padding: 0;
+  list-style: none;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: aliceblue;
+  z-index: 1;
+}
+
+.menu1 a:first-child {
+  margin-top: 40px;
+}
+
+.link1 {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.link1:hover {
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form-control {
+  width: 200px;
+  height: 18px;
+  margin: 6px;
+}
+
+#loginbtn {
+  width: 100px;
+  margin-left: 6px;
+  background-color: #0d6efd;
+  color: white;
+}
+
+.loginform {
+  margin-left: 77px;
+  margin-top: 10px;
+  color: #0d6efd;
+  display: flex;
+  flex-direction: column;
+}
+
+#inputPassword3 {
+  height: 30px; 
+  background-color: aliceblue;
+}
+
+#inputEmail3 {
+  height: 30px;
+  background-color: aliceblue;
+}
+
+form {
+  margin-top: 10px;
+}
+
+@media (max-width: 2300px) {
+  section {
+    font-size: 15px;
+    color: #0d6efd;
+  }
+}
+
+@media (max-width: 2300px) {
+  iframe {
+    width: 700px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 2300px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 2300px) {
+  h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 2500px) {
+  #searchfield {
+    width: 200px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 2300px) {
+  #wikilogo {
+    width: 200px;
+  }
+}
