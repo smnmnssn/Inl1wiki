@@ -1,0 +1,62 @@
+#sub {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  
+  
+
+}
+
+#sub:hover {
+  opacity: 0.5;
+}
+#sub:active {
+  opacity: 0.4;
+}
+
+#join {
+  color: rgb(0, 102, 255);
+  background-color: white;
+  border-color: rgb(0, 102, 255);
+  border-radius: 2px;
+  border-width: 1px;
+  padding: 9px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.15s, color 0.15s;
+  
+}
+#join:hover {
+  background-color: rgb(0, 102, 255);
+  color: white;
+}
+#join:active {
+  opacity: 0.7;
+}
+
+#tweet {
+  color: white;
+  background-color: rgb(2, 137, 255);
+  border: none;
+  border-radius: 2px;
+  border-width: 1px;
+  height: 25px;
+  width: 65px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: box-shadow 0.15s;
+  
+}
+#tweet:hover {
+  box-shadow: 2px 2px 10px rgb(17, 20, 22);
+  
+}
+
+
+
