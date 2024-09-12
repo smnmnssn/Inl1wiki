@@ -1,14 +1,14 @@
 body {
-  margin: 0px 600px;
+  margin: 0px 500px;
   line-height: 25px;
-  background-color: rgb(225, 239, 252);
+  background-color: rgb(255, 255, 255);
   font-size: 17px;
 }
 
 main {
   margin-left: 300px;
   margin-top: 50px;
-  background-color: rgb(225, 239, 252);
+  background-color: rgb(255, 255, 255);
 }
 
 section {
@@ -22,6 +22,11 @@ h2 {
 
 a {
   text-decoration: none;
+  color: #0d6efd;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .prog {
@@ -35,11 +40,12 @@ a {
   height: 30px;
   padding: 5px;
   line-height: 16px;
+  border-color: grey;
 }
 
 .textlink {
   cursor: pointer;
-  color: blue;
+  color: #0d6efd;
 }
 
 .textlink:hover {
@@ -53,6 +59,7 @@ a {
 .headercontainer {
   display: flex;
   height: 80px;
+  width: 2000px;
 }
 
 .searchcontainer {
@@ -95,13 +102,13 @@ a {
 #wikilogo{
   margin-top: 10px;
   width: 250px;
-  height: 75px;
+  height: 65px;
   padding-right: 20px;
 }
 
 #searchfield {
   height: 37px;
-  width: 400px;
+  width: 350px;
   border-radius: 3px;
   margin-top: 20px;
   background-color: aliceblue;
@@ -109,11 +116,11 @@ a {
 
 #searchbutton {
   background-color: #0d6efd;
-  border: none;
   color: white;
-  height: 37px;
+  height: 38px;
   width: 55px;
   border-radius: 5px;
+  border-style: none;
 }
 
 .form-control {
@@ -125,7 +132,7 @@ a {
   flex-direction: column;
   gap: 10px;
   position: fixed;
-  top: 9.65%;
+  top: 12.2%;
 }
 
 .sidenavhr {
@@ -208,8 +215,8 @@ a {
   width: 30px;
   height: 2px;
   margin-top: 7px;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 
 #toggle1 {
@@ -241,7 +248,7 @@ a {
 
 .menu1 {
   font-size: 19px;
-  font-weight: bold;
+  font-weight: 500;
   width: 130%;
   margin: 0;
   display: -ms-grid;
@@ -293,6 +300,8 @@ a {
   color: #0d6efd;
   display: flex;
   flex-direction: column;
+  position: relative;
+  right: 390px;
 }
 
 #inputPassword3 {
