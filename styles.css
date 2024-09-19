@@ -20,6 +20,10 @@ h2 {
   font-size: 25px;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
   color: #0d6efd;
@@ -209,7 +213,7 @@ a:hover {
   width: 180px;
 }
 
-.hamburger1 div {
+.hamburger1 span {
   background-color: black;
   position: relative;
   width: 30px;

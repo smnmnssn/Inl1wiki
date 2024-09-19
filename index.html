@@ -12,19 +12,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" type="favicon" href="assets/wiki-favicon.png" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico.png">
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header class="headercontainer">
-      <div class="hamburger">
-        <nav id="hamburgernav" class="navigation">
+      <div class="hamburger" role="navigation">
+        <div id="hamburgernav" class="navigation">
           <input id="toggle1" type="checkbox" />
-          <label class="hamburger1" for="toggle1">
-            <div class="top"></div>
-            <div class="meat"></div>
-            <div class="bottom"></div>
+          <label class="hamburger1" for="toggle1" aria-label="Huvudmeny">
+            <span class="top"></span>
+            <span class="meat"></span>
+            <span class="bottom"></span>
           </label>
 
           <nav class="menu1">
@@ -55,7 +55,7 @@
               >&#9679; Senaste ändringarna</a
             >
           </nav>
-        </nav>
+        </div>
       </div>
 
       <div>
@@ -72,6 +72,7 @@
         <div class="containerform">
           <form id="form">
             <input
+              aria-label="Sökfält"
               type="search"
               id="searchfield"
               name="q"
@@ -193,8 +194,7 @@
           <a href="https://sv.wikipedia.org/wiki/Dator">dator</a>,
           <a href="https://sv.wikipedia.org/wiki/Robot">robot</a> eller
           <a href="https://sv.wikipedia.org/wiki/NC-maskin">
-            <abbr title="Numerical control">NC-maskin</abbr></span
-          ></a>
+            <abbr title="Numerical control">NC-maskin</abbr></a>
           att utföra ett visst arbete. Personen som utför detta hantverk brukar
           ofta tituleras <a href="https://sv.wikipedia.org/wiki/Programmerare">programmerare</a>.
           Programmering är en del av det vidare begreppet
@@ -215,9 +215,9 @@
           <a href="https://sv.wikipedia.org/wiki/Array">uppställningar</a>.
         </p>
       </div>
-
+      
+      <section class="diff">
         <h2>Olika slags programmering</h2>
-        <section class="diff">
         <hr />
         <p>
           Programmering kan ske på olika abstraktionsnivåer. Närmast
@@ -476,7 +476,7 @@
           kända programspråket för logikprogrammering är Prolog.
         </p>
       </section>
-
+      
       <h2 id="hist">Historia</h2>
       <hr />
       <section class="history">
@@ -658,7 +658,7 @@
       <section>
         <h2 id="ref">Referenser</h2>
         <hr />
-        <h5 id="note">Noter</h5>
+        <h3 id="note">Noter</h3>
         <p>
           1. <a href="#hist">^</a
           ><a
