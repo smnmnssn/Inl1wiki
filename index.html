@@ -479,7 +479,7 @@
       
       <h2 id="hist">Historia</h2>
       <hr />
-      <section class="history">
+      <div class="history">
         <div style="margin-right: 10px">
           <p>
             Äran som den första programmeraren brukar tilldelas
@@ -522,7 +522,7 @@
             Modell av den analytiska maskinen
           </figcaption>
         </figure>
-      </section>
+      </div>
 
       <section>
         <h2 id="ex">Exempel</h2>
@@ -546,13 +546,13 @@
                 var timme = tid.getHours(); // Ger timmen från 0 till 23
                 var minut = tid.getMinutes(); // Ger minuten från 0 till 59
                 var sekund = tid.getSeconds(); // Ger sekunden 0 till 59
-                if (timme < 10) {
+                if (timme &lt; 10) {
                     timme = "0" + timme; // Gör h till hh
                 }
-                if (minut < 10) {
+                if (minut &lt; 10) {
                     minut = "0" + minut; // Gör m till mm
                 }
-                if (sekund < 10) {
+                if (sekund &lt; 10) {
                     sekund = "0" + sekund; // Gör s till ss
                 }
                    document.write("Klockan är nu " + timme + ":" + minut + ":" + sekund); // skriv ut tiden
@@ -579,10 +579,10 @@
             int timme = tiden.wHour;
             int minut = tiden.wMinute;
             int sekund = tiden.wSecond;
-            cout << "Klockan är nu "
-                 << setfill('0') << setw(2)
-                 << timme << ":" << minut
-                 << ":" << sekund << endl;
+            cout &lt;&lt; "Klockan är nu "
+            &lt;&lt; setfill('0') &lt;&lt; setw(2)
+            &lt;&lt; timme &lt;&lt; ":" &lt;&lt; minut
+            &lt;&lt; ":" &lt;&lt; sekund &lt;&lt; endl;
             cin.get(); //Väntar på inmatning från användaren så att programmet inte stängs ner direkt när det körs
             return 0;
          }
